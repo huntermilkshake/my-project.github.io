@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200px;
+  line-height: 1.2;
+}
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  padding: 60px 0;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60;
+}
+
+.top {
+  height: 500vh;
+}
+
+.top__layer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-size: coner;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.top__layer--5 {
+  animation-name: top-layer-5;
+}
+@keyframes top-layer-5 {
+  to {
+    scale: 1.25;
+  }
+}
+
+.top__layer--4 {
+  animation-name: top-layer-4;
+}
+@keyframes top-layer-4 {
+  to {
+    scale: 1.35;
+  }
+}
+.top__layer--3 {
+  animation-name: top-layer-3;
+}
+@keyframes top-layer-3 {
+  to {
+    scale: 1.5;
+  }
+}
+.top__layer--2 {
+  animation-name: top-layer-2;
+}
+@keyframes top-layer-2 {
+  to {
+    scale: 3;
+  }
+}
+.top__layer--1 {
+  animation-name: top-layer-1;
+}
+@keyframes top-layer-1 {
+  to {
+    scale: 4;
+  }
+}
+
+.top__text {
+  font-family: "Rubik Bubbles", system-ui;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 400;
+  padding-left: 500px;
+  color: rgba(151, 21, 105, 0.938);
+}
+
+.text {
+  font-size: 44px;
+}
